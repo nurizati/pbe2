@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    }
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    }
+    /* Style the header */
+    .header {
+    padding: 45px;
+    text-align: center;
+    background-image: url(coffee1.jpg);
+    }
+    /* Increase the font size of the h1 element */
+    .header h1 {
+    font-size: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: khaki;
+    }
+    p,
+    h3 {
+    color: white;
+    }
+    /* Main column */
+    .main {
+    flex: 70%;
+    width: 74%;
+    text-align: center;
+    background-color: rgb(165, 103, 103);
+    padding: 20px;
+    }
+    .sidenav {
+    height: 200%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 41%;
+    left: 0;
+    background-color: rgb(49, 19, 19);
+    overflow-x: hidden;
+    padding-top: 50px;
+    }
+    .sidenav a {
+    padding: 6px 6px 6px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    }
+    .sidenav a:hover {
+    color: #f1f1f1;
+    }
+    .main {
+    margin-left: 200px;
+    /* Same as the width of the sidenav */
+    }
+    @media screen and (max-height: 450px) {
+    .sidenav {
+    padding-top: 50%;
+    }
+    .sidenav a {
+    font-size: 10px;
+    }
+    }
+    /*login interface*/
+    .sidenavright {
+    height: 200%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 41%;
+    right: 0;
+    background-color: rgb(49, 19, 19);
+    overflow-x: hidden;
+    padding-top: 50px;
+    }
+    .sidenavright a {
+    padding: 6px 6px 6px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    }
+    .sidenavright a:hover {
+    color: #f1f1f1;
+    }
+    .mainright {
+    margin-right: 200px;
+    /* Same as the width of the sidenav */
+    }
+    @media screen and (max-height: 450px) {
+    .sidenavright {
+    padding-top: 50px;
+    }
+    .sidenavright a {
+    font-size: 10px;
+    }
+    }
+    /* Fake image, just for this example */
+    .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    }
+    /* Footer */
+    .footer {
+    text-align: center;
+    background: #ddd;
+    }
